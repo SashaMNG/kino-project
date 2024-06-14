@@ -1,46 +1,80 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="ru">
+<!-- ДОПОЛНИТЬ HEAD
+подключить все файлы 
+стилей
+иконка 
+шрифты
+темная светлая тема-->
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Kino</title>
 </head>
 
-<body>
+<body class="page">
   <header class="header">
-    <div class="header__logo"></div>
-    <nav class="header__nav">
-      <ul class="header__list">
-        <li class="header__item">мой выбор</li>
-        <li class="header__item">просмотрено</li>
-        <li class="header__item">кинопоиск</li>
+    <div class="header__logo_box">
+      <div class="header__logo"></div>
+      <h1 class="header__title">Моё кино</h1>
+    </div>
+    <nav class="header__menu">
+      <ul class="header__menu_list">
+        <li class="header__menu_item">
+         <a href="#" class="header__menu_link">все фильмы</a>
+        </li>
+        <li class="header__menu_item">
+          <a href="#" class="header__menu_link">просмотрено</a>
+         </li>
+         <li class="header__menu_item">
+          <a href="https://www.kinopoisk.ru/" class="header__menu_link">кинопоиск</a>
+         </li>
       </ul>
     </nav>
-    <button class="header__search_button"></button>
+    <button class="header__add_button">+</button>
+    <button class="header__search_button">
+      <!-- взять иконку поиска в Эльбрусе -->
+    </button>
     <div class="header__avatar"></div>
-    <main class="content">
-      <section class="content__section">
-        <content__list>
-          <content__item></content__item>
-          <content__item></content__item>
-          <content__item></content__item>
-        </content__list>
-      </section>
-      <section class="content__section">
-        <content__list>
-          <content__item></content__item>
-          <content__item></content__item>
-          <content__item></content__item>
-        </content__list>
-      </section>
-    </main>
-    <footer class="footer">
-      <footer__logo></footer__logo>
-      <footer__copyright></footer__copyright>
-      <footer__info></footer__info>
-    </footer>
   </header>
+  <main class="content">
+   
+    <h2 class="content__title">Недавно добавленные</h2>
+    <section class="content__section">
+      <ul class="content__card_list"></ul>
+    </section>
+    <h2 class="content__title">Все фильмы</h2>
+    <section class="content__section">
+      <ul class="content__card_list"></ul>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="footer__logo"></div>
+    <div class="footer__copyright"></div>
+    <div class="footer__info"></div>
+  </footer>
+
+  <!-- <script src="./scripts/cards.js"></script>
+<script src="./scripts/index.js" defer></script> -->
+
+  <template id="card-template">
+    <li class="content__card_item card">
+      <img class="card__image" src="" alt="" />
+      <button type="button" class="card__rating-button"></button>
+      <button type="button" class="card__comment-button"></button>
+      <button type="button" class="card__delete-button"></button>
+      <div class="card__description">
+        <h3 class="card__title">название фильма</h3>
+        <div class="card__info">
+          <p class="card__info_year">год</p>
+          <p class="card__info_type">фильм или сериал</p>
+          <p class="card__info_genre">жанр</p>
+        </div>
+      </div>
+    </li>
+
 </body>
 
 </html>
