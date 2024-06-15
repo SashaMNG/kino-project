@@ -5,7 +5,9 @@
 стилей
 иконка 
 шрифты
+ПРОПИСАТЬ ВСЕМ КНОПКАМ АТРИБУТЫ
 темная светлая тема-->
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,53 +16,56 @@
 
 <body class="page">
   <header class="header">
-    <div class="header__logo_box">
-      <div class="header__logo"></div>
+    <div class="header__logo-box">
+      <div class="header__logo logo"></div>
       <h1 class="header__title">Моё кино</h1>
     </div>
+
     <nav class="header__menu">
-      <ul class="header__menu_list">
-        <li class="header__menu_item">
-         <a href="#" class="header__menu_link">все фильмы</a>
+      <ul class="header__menu__list">
+        <li class="header__menu__item">
+          <a href="#" class="header__menu__link">все фильмы</a>
         </li>
-        <li class="header__menu_item">
-          <a href="#" class="header__menu_link">просмотрено</a>
-         </li>
-         <li class="header__menu_item">
-          <a href="https://www.kinopoisk.ru/" class="header__menu_link">кинопоиск</a>
-         </li>
+        <li class="header__menu__item">
+          <a href="#" class="header__menu__link">просмотрено</a>
+        </li>
+        <li class="header__menu__item">
+          <a href="https://www.kinopoisk.ru/" class="header__menu__link">кинопоиск</a>
+        </li>
       </ul>
     </nav>
-    <button class="header__add_button">+</button>
-    <button class="header__search_button">
+
+    <button class="header__add-button">+</button>
+    <button class="header__search-button">
       <!-- взять иконку поиска в Эльбрусе -->
     </button>
     <div class="header__avatar"></div>
   </header>
+
   <main class="content">
-   
+
     <h2 class="content__title">Недавно добавленные</h2>
-    <section class="content__section">
-      <ul class="content__card_list"></ul>
-    </section>
+    <article class="content__section">
+      <ul class="content__card__list"></ul>
+    </article>
     <h2 class="content__title">Все фильмы</h2>
-    <section class="content__section">
-      <ul class="content__card_list"></ul>
-    </section>
+    <article class="content__section">
+      <ul class="content__card__list"></ul>
+    </article>
 
   </main>
 
   <footer class="footer">
     <div class="footer__logo"></div>
     <div class="footer__copyright"></div>
-    <div class="footer__info"></div>
+    <div class="footer__deleted">Архив</div>
   </footer>
 
   <!-- <script src="./scripts/cards.js"></script>
 <script src="./scripts/index.js" defer></script> -->
 
   <template id="card-template">
-    <li class="content__card_item card">
+    <li class="content__card__item card">
       <img class="card__image" src="" alt="" />
       <button type="button" class="card__rating-button"></button>
       <button type="button" class="card__comment-button"></button>
@@ -68,9 +73,9 @@
       <div class="card__description">
         <h3 class="card__title">название фильма</h3>
         <div class="card__info">
-          <p class="card__info_year">год</p>
-          <p class="card__info_type">фильм или сериал</p>
-          <p class="card__info_genre">жанр</p>
+          <p class="card__info-year">год</p>
+          <p class="card__info-type">фильм или сериал</p>
+          <p class="card__info-genre">жанр</p>
         </div>
       </div>
     </li>
