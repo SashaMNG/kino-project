@@ -43,7 +43,7 @@
           <a href="#" class="header__menu__link">просмотрено</a>
         </li>
         <li class="header__menu__item">
-          <a href="https://www.kinopoisk.ru/" class="header__menu__link"  target="_blank">кинопоиск</a>
+          <a href="https://www.kinopoisk.ru/" class="header__menu__link" target="_blank">кинопоиск</a>
         </li>
       </ul>
     </nav>
@@ -61,15 +61,34 @@
 
   <main class="content">
 
-    
+
     <section class="content__section">
       <h2 class="content__title">Недавно добавленные</h2>
       <ul class="content__card__list"></ul>
     </section>
-    
+
     <section class="content__section">
       <h2 class="content__title">Все фильмы</h2>
-      <ul class="content__card__list"></ul>
+      <ul class="content__card__list">
+        <li class="content__card__item card">
+          <div class="image__container">
+            <img class="card__image" src="./images/good-year.webp" alt="" />
+            <div class="button__container">
+              <button type="button" class="card__rating-button"></button>
+              <button type="button" class="card__comment-button"></button>
+              <button type="button" class="card__delete-button"></button>
+            </div>
+          </div>
+          <div class="card__description">
+            <h3 class="card__title">название фильма</h3>
+            <div class="card__info">
+              <p class="card__info-year">год</p>
+              <p class="card__info-type">фильм или сериал</p>
+              <p class="card__info-genre">жанр</p>
+            </div>
+          </div>
+        </li>
+      </ul>
     </section>
 
   </main>
@@ -84,8 +103,8 @@
     <div class="footer__deleted">Архив</div>
   </footer>
 
-<script src="./scripts/cards.js"></script>
-<script src="./scripts/index.js" defer></script>
+  <script src="./scripts/cards.js"></script>
+  <script src="./scripts/index.js" defer></script>
 
   <template id="card-template">
     <li class="content__card__item card">
