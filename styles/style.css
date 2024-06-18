@@ -116,7 +116,10 @@
 }
 
 .content__card__list {
-
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 400px);
+    block-size: 100%;
+    overflow-x: scroll;
 }
 
 .content__card__item {
