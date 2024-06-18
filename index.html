@@ -27,8 +27,8 @@
   <header class="header accent-section">
     <div class="header__logo-box">
       <div class="header__logo logo">
-        <svg viewBox="0 0 14 14">
-          <use href="./svg/logo.svg#logo">
+        <svg viewBox="0 0 67 67" class="logo__image">
+          <use href="./svg/logo1.svg#logo">
         </svg>
       </div>
       <h1 class="header__title">Моё кино</h1>
@@ -48,11 +48,15 @@
       </ul>
     </nav>
 
-    <button type="button" class="header__add-button">+</button>
-    <button type="button" class="header__search-button">
-      <!-- взять иконку поиска в Эльбрусе -->
+    <button type="button" class="header__add-button button">+</button>
+    <button type="button" class="header__search-button button">
+      <svg viewBox="0 0 64 64" class="search-icon">
+        <use href="./svg/search.svg#search">
+      </svg>
     </button>
-    <div class="header__avatar"></div>
+    <button class="header__avatar-button button">
+      <img src="./images/avatar_png.png" class="avatar__image">
+    </button>
   </header>
 
   <main class="content">
@@ -72,8 +76,8 @@
 
   <footer class="footer accent-section">
     <div class="footer__logo logo">
-      <svg viewBox="0 0 14 14">
-        <use href="./svg/logo.svg#logo">
+      <svg viewBox="0 0 67 67" class="logo__image">
+        <use href="./svg/logo1.svg#logo">
       </svg>
     </div>
     <div class="footer__copyright">Саша и Оля</div>

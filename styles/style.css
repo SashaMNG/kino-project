@@ -35,9 +35,12 @@
 }
 
 .logo {
+        
+}
+
+.logo__image {
     inline-size: 40px;
-    color: white;
-    
+    color: var(--accent-color);
 }
 
 .header__title {
@@ -63,21 +66,44 @@
     font-size: 25px;
 }
 
-.header__add-button {
+.button {
+    background-color: transparent;
+    border:none;
+    cursor: pointer;
+}
 
+.header__add-button {
+    font-size: 40px;
+    line-height: 50px;
+    border: 1px solid var(--accent-color);
+    inline-size: 50px;
+    block-size: 50px;
 }
 
 .header__search-button {
-
+   
 }
 
-.header__avatar {
-
+.search-icon {
+    inline-size: 40px;
+    color: white;
 }
+
+.header__avatar-button {
+    inline-size: 70px;
+    block-size: 70px;
+}
+
+.avatar__image {
+    inline-size: 100%;
+    block-size: 100%;
+    object-fit: cover;
+}
+
+
 
 .content {
-    /* display: flex;
-    flex-direction: column; */
+    flex: 1 0 auto;
 }
 
 .content__title {
