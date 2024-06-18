@@ -1,17 +1,26 @@
 <!DOCTYPE html>
 <html lang="ru">
-<!-- ДОПОЛНИТЬ HEAD
+<!-- ДОПОЛНИТЬ HEAD:
 подключить все файлы 
 стилей
 иконка 
 шрифты
-ПРОПИСАТЬ ВСЕМ КНОПКАМ АТРИБУТЫ
 темная светлая тема-->
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Kino</title>
+  <link rel="icon" href="./images/favicon.ico" sizes="any">
+  <link rel="icon" href="./images/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="./images/mobile-favicon.png">
+  <link rel="stylesheet" href="./fonts/fonts.css" />
+  <link rel="stylesheet" href="./styles/variables.css" />
+  <link rel="stylesheet" href="./styles/globals.css" />
+  <link rel="stylesheet" href="./styles/style.css" />
+  <link rel="stylesheet" href="./styles/animations.css" />
+  <!-- <link rel="stylesheet" href="./styles/themes.css" /> -->
+  <!-- <script src="./scripts/set-theme.js"></script> -->
 </head>
 
 <body class="page">
@@ -35,8 +44,8 @@
       </ul>
     </nav>
 
-    <button class="header__add-button">+</button>
-    <button class="header__search-button">
+    <button type="button" class="header__add-button">+</button>
+    <button type="button" class="header__search-button">
       <!-- взять иконку поиска в Эльбрусе -->
     </button>
     <div class="header__avatar"></div>
@@ -61,8 +70,8 @@
     <div class="footer__deleted">Архив</div>
   </footer>
 
-  <!-- <script src="./scripts/cards.js"></script>
-<script src="./scripts/index.js" defer></script> -->
+<script src="./scripts/cards.js"></script>
+<script src="./scripts/index.js" defer></script>
 
   <template id="card-template">
     <li class="content__card__item card">
