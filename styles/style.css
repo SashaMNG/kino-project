@@ -35,9 +35,12 @@
 }
 
 .logo {
+        
+}
+
+.logo__image {
     inline-size: 40px;
-    color: white;
-    
+    color: var(--accent-color);
 }
 
 .header__title {
@@ -63,28 +66,49 @@
     font-size: 25px;
 }
 
-.header__add-button {
+.button {
+    background-color: transparent;
+    border:none;
+    cursor: pointer;
+}
 
+.header__add-button {
+    font-size: 40px;
+    line-height: 50px;
+    border: 1px solid var(--accent-color);
+    inline-size: 50px;
+    block-size: 50px;
 }
 
 .header__search-button {
-
+   
 }
 
-.header__avatar {
+.search-icon {
+    inline-size: 40px;
+    color: white;
+}
 
+.header__avatar-button {
+    inline-size: 70px;
+    block-size: 70px;
+}
+
+.avatar__image {
+    inline-size: 100%;
+    block-size: 100%;
+    object-fit: cover;
 }
 
 .content {
-    /* display: flex;
-    flex-direction: column; */
-}
-
-.content__title {
-
+    flex: 1 0 auto;
 }
 
 .content__section {
+display: grid;
+}
+
+.content__title {
 
 }
 
@@ -93,14 +117,49 @@
 }
 
 .content__card__item {
-
+inline-size: 300px;
+block-size: 400px;
+padding: 5px;
 }
 
 .card {
 
 }
 
+.image__container {
+  position: relative;
+  border-radius: 25px;
+  inline-size: 100%;
+block-size: 350px;
+}
+
+.image__container::after {
+  content: '';
+  inset: 0;
+  inline-size: 100%;
+  block-size: 50%;
+  position: absolute;
+  background-image: linear-gradient(var(--text-color), transparent);
+  border-radius: 25px;
+}
+
+
 .card__image {
+  /* position: relative; */
+inline-size: 100%;
+block-size: 100%;
+object-fit: cover;
+object-position: center;
+
+}
+
+.button__container {
+  display: flex;
+  gap: 10px;
+z-index: 1;
+position: absolute;
+top: 10px;
+left: 10px;
 
 }
 
@@ -117,7 +176,7 @@
 }
 
 .card__description {
-
+padding: 10px;
 }
 
 .card__title {
@@ -125,7 +184,8 @@
 }
 
 .card__info {
-
+display: flex;
+justify-content: space-between;
 }
 
 .card__info-year {
