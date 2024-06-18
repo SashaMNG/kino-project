@@ -24,9 +24,13 @@
 </head>
 
 <body class="page">
-  <header class="header">
+  <header class="header accent-section">
     <div class="header__logo-box">
-      <div class="header__logo logo"></div>
+      <div class="header__logo logo">
+        <svg viewBox="0 0 14 14">
+          <use href="./svg/logo.svg#logo">
+        </svg>
+      </div>
       <h1 class="header__title">Моё кино</h1>
     </div>
 
@@ -39,7 +43,7 @@
           <a href="#" class="header__menu__link">просмотрено</a>
         </li>
         <li class="header__menu__item">
-          <a href="https://www.kinopoisk.ru/" class="header__menu__link">кинопоиск</a>
+          <a href="https://www.kinopoisk.ru/" class="header__menu__link"  target="_blank">кинопоиск</a>
         </li>
       </ul>
     </nav>
@@ -53,20 +57,26 @@
 
   <main class="content">
 
-    <h2 class="content__title">Недавно добавленные</h2>
-    <article class="content__section">
+    
+    <section class="content__section">
+      <h2 class="content__title">Недавно добавленные</h2>
       <ul class="content__card__list"></ul>
-    </article>
-    <h2 class="content__title">Все фильмы</h2>
-    <article class="content__section">
+    </section>
+    
+    <section class="content__section">
+      <h2 class="content__title">Все фильмы</h2>
       <ul class="content__card__list"></ul>
-    </article>
+    </section>
 
   </main>
 
-  <footer class="footer">
-    <div class="footer__logo"></div>
-    <div class="footer__copyright"></div>
+  <footer class="footer accent-section">
+    <div class="footer__logo logo">
+      <svg viewBox="0 0 14 14">
+        <use href="./svg/logo.svg#logo">
+      </svg>
+    </div>
+    <div class="footer__copyright">Саша и Оля</div>
     <div class="footer__deleted">Архив</div>
   </footer>
 
