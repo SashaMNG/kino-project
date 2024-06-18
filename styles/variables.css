@@ -1,5 +1,9 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
 
 :root {
-  
+  --main-font: 'Raleway';
+  --accent-font: 'STIX Two Text';
+  --text-color: #312A4E;
+  --background-color: #F3EFEC;
+  --accent-color: #ffdc6b;
 }
