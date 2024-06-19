@@ -11,6 +11,15 @@ function createCard(card, deleteCard) {
     
     const cardTitle = cardElement.querySelector('.card__title');
     cardTitle.textContent = card.name;
+
+    const cardYear = cardElement.querySelector('.card__info-year');
+    cardYear.textContent = card.info.year;
+
+    const cardType = cardElement.querySelector('.card__info-type');
+    cardType.textContent = card.info.type;
+
+    const cardGenre = cardElement.querySelector('.card__info-genre');
+    cardGenre.textContent = card.info.genre;
           
     const deleteButton = cardElement.querySelector('.card__delete-button');
     
