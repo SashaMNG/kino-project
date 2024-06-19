@@ -27,8 +27,8 @@
   <header class="header accent-section">
     <div class="header__logo-box">
       <div class="header__logo logo">
-        <svg viewBox="0 0 67 67" class="logo__image">
-          <use href="./svg/logo1.svg#logo">
+        <svg viewBox="0 0 611.921 611.921" class="logo__image">
+          <use href="./svg/logo.svg#logo">
         </svg>
       </div>
       <h1 class="header__title">Моё кино</h1>
@@ -62,25 +62,37 @@
   <main class="content">
 
 
-    <section class="content__section">
+    <!-- <section class="content__section">
       <h2 class="content__title">Недавно добавленные</h2>
-      <ul class="content__card__list"></ul>
-    </section>
+      <ul class="content__card__list content__card__list-new"></ul>
+    </section> -->
 
     <section class="content__section">
       <h2 class="content__title">Все фильмы</h2>
-      <ul class="content__card__list">
+      <ul class="content__card__list content__card__list-all">
         <li class="content__card__item card">
           <div class="image__container">
             <img class="card__image" src="./images/good-year.webp" alt="" />
             <div class="button__container">
-              <button type="button" class="card__rating-button"></button>
-              <button type="button" class="card__comment-button"></button>
-              <button type="button" class="card__delete-button"></button>
+              <button type="button" class="card__comment-button card__button button">
+                <svg viewBox="0 0 612 612" class="card__icon comment-icon">
+                  <use href="./svg/comment.svg#comment">
+                </svg>
+              </button>
+              <button type="button" class="card__rating-button card__button button">
+                <svg viewBox="0 0 32 32" class="card__icon rating-icon">
+                  <use href="./svg/rating.svg#rating">
+                </svg>
+              </button>              
+              <button type="button" class="card__delete-button card__button button">
+                <svg viewBox="0 0 40 40" class="card__icon delete-icon">
+                  <use href="./svg/delete.svg#delete">
+                </svg>
+              </button>
             </div>
           </div>
           <div class="card__description">
-            <h3 class="card__title">название фильма</h3>
+            <h3 class="card__title">Хороший год</h3>
             <div class="card__info">
               <p class="card__info-year">год</p>
               <p class="card__info-type">фильм или сериал</p>
@@ -95,8 +107,8 @@
 
   <footer class="footer accent-section">
     <div class="footer__logo logo">
-      <svg viewBox="0 0 67 67" class="logo__image">
-        <use href="./svg/logo1.svg#logo">
+      <svg viewBox="0 0 611.921 611.921" class="logo__image">
+        <use href="./svg/logo.svg#logo">
       </svg>
     </div>
     <div class="footer__copyright">Саша и Оля</div>
@@ -108,16 +120,32 @@
 
   <template id="card-template">
     <li class="content__card__item card">
-      <img class="card__image" src="" alt="" />
-      <button type="button" class="card__rating-button"></button>
-      <button type="button" class="card__comment-button"></button>
-      <button type="button" class="card__delete-button"></button>
+      <div class="image__container">
+        <img class="card__image" src="" alt="" />
+        <div class="button__container">
+          <button type="button" class="card__comment-button card__button button">
+            <svg viewBox="0 0 612 612" class="card__icon comment-icon">
+              <use href="./svg/comment.svg#comment">
+            </svg>
+          </button>
+          <button type="button" class="card__rating-button card__button button">
+            <svg viewBox="0 0 32 32" class="card__icon rating-icon">
+              <use href="./svg/rating.svg#rating">
+            </svg>
+          </button>              
+          <button type="button" class="card__delete-button card__button button">
+            <svg viewBox="0 0 40 40" class="card__icon delete-icon">
+              <use href="./svg/delete.svg#delete">
+            </svg>
+          </button>
+        </div>
+      </div>
       <div class="card__description">
-        <h3 class="card__title">название фильма</h3>
+        <h3 class="card__title"></h3>
         <div class="card__info">
-          <p class="card__info-year">год</p>
-          <p class="card__info-type">фильм или сериал</p>
-          <p class="card__info-genre">жанр</p>
+          <p class="card__info-year"></p>
+          <p class="card__info-type"></p>
+          <p class="card__info-genre"></p>
         </div>
       </div>
     </li>

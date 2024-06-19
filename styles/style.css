@@ -123,6 +123,8 @@ transform: scaleX(1);
 }
 
 .content {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
     flex: 1 0 auto;
     padding: 10px;
 }
@@ -130,6 +132,7 @@ transform: scaleX(1);
 .content__section {
 display: grid;
 margin-block-end: 20px;
+    padding: 50px 20px;
 }
 
 .content__title {
@@ -137,13 +140,16 @@ margin-block-end: 20px;
 }
 
 .content__card__list {
-
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 400px);
+    block-size: 100%;
+    overflow-x: scroll;
 }
 
 .content__card__item {
-inline-size: 300px;
-block-size: 400px;
-padding: 5px;
+    inline-size: 300px;
+    block-size: 400px;
+    padding: 5px;
 }
 
 .card {
@@ -151,56 +157,74 @@ padding: 5px;
 }
 
 .image__container {
-  position: relative;
-  border-radius: 25px;
-  inline-size: 100%;
-block-size: 350px;
+    position: relative;
+    border-radius: 25px;
+    inline-size: 100%;
+    block-size: 350px;
 }
 
 .image__container::after {
-  content: '';
-  inset: 0;
-  inline-size: 100%;
-  block-size: 50%;
-  position: absolute;
-  background-image: linear-gradient(var(--text-color), transparent);
-  border-radius: 25px;
+    content: '';
+    inset: 0;
+    inline-size: 100%;
+    block-size: 50%;
+    position: absolute;
+    background-image: linear-gradient(var(--text-color), transparent);
+    border-radius: 25px;
 }
 
 
 .card__image {
   /* position: relative; */
-inline-size: 100%;
-block-size: 100%;
-object-fit: cover;
-object-position: center;
+    inline-size: 100%;
+    block-size: 100%;
+    object-fit: cover;
+    object-position: center;
 
 }
 
 .button__container {
-  display: flex;
-  gap: 10px;
-z-index: 1;
-position: absolute;
-top: 10px;
-left: 10px;
+    display: flex;
+    inline-size: calc(100% - 40px);
+    justify-content: space-between;
+    gap: 10px;
+    z-index: 1;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
 
+
+
+.card__button {
+    inline-size: 20px;
+    block-size: 20px;
+}
+
+.card__icon {
+    inline-size: 20px;
+    block-size: 20px;
+    color: var(--accent-color);
 }
 
 .card__rating-button {
 
 }
 
-.card__comment-button {
-
+.comment-icon {
+    
 }
 
 .card__delete-button {
+    
+}
 
+.delete-icon {
+    
 }
 
 .card__description {
-padding: 10px;
+    padding: 10px;
 }
 
 .card__title {
@@ -208,8 +232,8 @@ padding: 10px;
 }
 
 .card__info {
-display: flex;
-justify-content: space-between;
+    display: flex;
+    justify-content: space-between;
 }
 
 .card__info-year {
