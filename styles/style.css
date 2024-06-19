@@ -64,6 +64,30 @@
 .header__menu__link {
     text-decoration: none;
     font-size: 25px;
+    position: relative;
+}
+
+.header__menu__link::after {
+    content: "";
+    position: absolute;
+    border-bottom: 4px solid var(--accent-color);
+    width: 0%;
+    top: 1em;
+    left: 0;
+    transition: width 0.3s;
+}
+
+.header__menu__link:hover::after {
+    width: 100%;
+    transition: width 0.3s ease;
+}
+
+.header__menu__link:focus {
+    outline: none;
+}
+
+.header__menu__link:focus-visible {
+    outline: 2px solid var(--accent-color);
 }
 
 .button {
