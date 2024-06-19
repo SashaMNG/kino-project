@@ -117,8 +117,8 @@
 }
 
 .content {
-	display: grid;
-	grid-template-rows: 1fr 1fr;
+	/* display: grid;
+	grid-template-rows: 1fr 1fr; */
 	flex: 1 0 auto;
 	padding: 50px 20px;
 }
@@ -132,14 +132,17 @@
 
 .content__card__list {
 	display: grid;
-	grid-template-columns: repeat(auto-fill, 400px);
+  /* grid-template-rows: 1fr; */
+	grid-template-columns: repeat(auto-fill);
+  grid-auto-flow: column;
+  gap: 30px;
 	block-size: 100%;
 	overflow-x: scroll;
 }
 
 .content__card__item {
 	inline-size: 300px;
-	block-size: 400px;
+	block-size: 480px;
 	padding: 5px;
 }
 
@@ -222,6 +225,7 @@
 .card__info {
 	display: flex;
 	justify-content: space-between;
+  flex-direction: column;
 }
 
 .card__info-year {
