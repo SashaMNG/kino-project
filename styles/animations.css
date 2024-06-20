@@ -1,37 +1,18 @@
 /* все анимации */
 
-@keyframes plus {
+@keyframes puls {
 	from {
 		transform: scale(1);
+		color: white;
 	}
 	to {
 		transform: scale(1.5);
+		color: var(--accent-color);
 	}
 }
 
-.header__add-button:hover {
+.menu-button:hover {
 	transform-origin: center;
-	animation: plus 0.3s ease-in 0.1s 2 alternate;
+	animation: puls 0.7s ease-in-out 2 alternate;
 }
 
-.plus:hover {
-	color: var(--accent-color);
-}
-
-@keyframes search {
-	from {
-		transform: scale(1);
-	}
-	to {
-		transform: scale(1.5);
-	}
-}
-
-.header__search-button:hover {
-	transform-origin: center;
-	animation: search 0.3s ease-in 0.1s 2 alternate;
-}
-
-.search-icon:hover {
-	color: var(--accent-color);
-}

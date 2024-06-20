@@ -92,26 +92,29 @@
 	background-color: transparent;
 	border: none;
 	cursor: pointer;
+    padding: 0;
+    margin: 0;
 }
 
-.header__add-button {
-	font-size: 40px;
-	line-height: 50px;
-	inline-size: 50px;
-	block-size: 50px;
+.menu-button {
+    display: grid;
+    place-content: center;
+    color: white;
 }
 
-.plus {
+.header__add-button {    
 	inline-size: 30px;
-	color: white;
+	block-size: 30px;    
+}
+
+.menu-icon {
+	inline-size: 100%;
+	color: currentColor;
 }
 
 .header__search-button {
-}
-
-.search-icon {
 	inline-size: 45px;
-	color: white;
+	block-size: 45px;
 }
 
 .header__avatar-button {
