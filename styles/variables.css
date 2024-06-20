@@ -2,7 +2,8 @@
 
 :root {
   --main-font: 'Raleway';
-  --accent-font: 'STIX Two Text';
+  /* --accent-font: 'STIX Two Text'; */
+  --main-font-weight: 400;
   --text-color: #312A4E;
   --background-color: #F3EFEC;
   --accent-background-color: #312A4E;
