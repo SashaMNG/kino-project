@@ -37,3 +37,4 @@ function deleteCard (element) {
 initialCards.forEach(function(item) {
     cardsList.append(createCard(item, deleteCard));
 })
+
